@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styles from "./SearchBar.module.scss";
 
+
+
 class SearchBar extends Component {
 
   render() { 
