@@ -7,16 +7,34 @@
   background-color: whitesmoke;
   border-radius: 5%;
   font-family: 'Khula', sans-serif;
-  box-shadow: 4px 4px 8px black;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.27);
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transition: all 0.1s;
+    height: 40vh, 50vh;
+  }
 }
 
 .Card img {
   height: 80%;
   width: 100%;
   align-items: center;
+  object-fit: cover;
+}
+
+.text {
+  color: black;
+  height: 30%;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 h3 {
-  margin: 0;
+  margin-top: 3px;
 }
 p {
   margin-top: 0;

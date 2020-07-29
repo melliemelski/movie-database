@@ -4,11 +4,6 @@ import styles from "./CardList.module.scss";
 
 
 class CardList extends Component {
-//   getCards = (movie) => (
-//     <div className={styles.card}  key={movie.imdbID}>
-//         <Card movie={movie}/>
-//     </div>
-// );
 
 render() {
     const { movies } = this.props;

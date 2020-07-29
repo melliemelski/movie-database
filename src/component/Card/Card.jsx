@@ -14,7 +14,7 @@ class Card extends Component {
       <>
       <div className={styles.Card}>
         <img src={Poster} alt="Movie Poster"/>
-        <section>
+        <section className={styles.text}>
           <h3>{Title}</h3>
           <p>
             {<span>{Year}</span>}

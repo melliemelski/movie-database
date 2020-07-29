@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Main from "../src/container/Main";
 import styles from "./App.module.scss";
+import SearchBar from "./component/SearchBar";
 
 export default class App extends Component {
   state = {
@@ -31,14 +32,9 @@ export default class App extends Component {
     return (
           <>
             <div>
-              <div className={styles.search}>
-                <p>Title</p>
-                <input type="text" onChange={this.handleTitleSearch}/>
-                <p>Year</p>
-                <input type="text" onChange={this.handleYearSearch}/>
-                <button onClick={this.fetchMovies}>Search</button>
-              </div>
-            <Main movies={this.state.movies}/>
+              <SearchBar className={styles.search} handleTitleSearch={this.handleTitleSearch} handleYearSearch={this.handleYearSearch}
+              fetchMovies={this.fetchMovies} />
+            <Main className={styles.main} movies={this.state.movies}/>
             </div>
           </>
         ) 
