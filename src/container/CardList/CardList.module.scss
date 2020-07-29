@@ -1,0 +1,9 @@
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+    overflow-y: scroll;
+  }
